@@ -6,9 +6,6 @@
     padding: 0px;
 }
 
-::-webkit-scrollbar{
-    width: 0px;
-}
 
 body{
     background-color: #44474edc;
@@ -64,6 +61,6 @@ main > section#res > fieldset > select{
 footer{
     color: white;
     margin-top: 14px;
-    padding: 8px;
+    padding: 8px 8px 25px 8px;
     text-align: center;
 }
