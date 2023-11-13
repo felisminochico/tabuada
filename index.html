@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Inteligente</title>
+    <link rel="stylesheet" href="estilos/mobile-first.css" type="text/css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" type="text/css" media="screen and (min-width: 690px)">
+    <link rel="stylesheet" href="estilos/pc.css" type="text/css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="estilos/tv.css" type="text/css" media="screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <script src="javascript/tabuada.js" type="text/javascript"></script>
+</head>
+<body>
+    <main>
+        <h1>Tabuada</h1>
+
+        <section>
+            <fieldset>
+                <legend>Condições da Tabuada</legend>
+
+                <p>
+                    Número da Tabuada: <br> <input type="number" name="numero" id="numero">
+                </p>
+
+                <p>
+                    Inicio da Contagem: <br> <input type="number" name="inicio" id="inicio">
+                </p>
+
+                <p>
+                    Fim da Contagem: <br> <input type="number" name="fim" id="fim">
+                </p>
+            </fieldset>
+
+                <fieldset>
+                    <legend>Operadores da Tabuada</legend>
+
+                        <button onclick="divisão()">Divisão</button>
+                        <button onclick="multiplicação()">Multiplicação</button>
+                        <button onclick="soma()">Soma</button>
+                        <button onclick="subtração()">Subtracão</button>
+                </fieldset>
+        </section>
+
+        <section id="res">
+            <fieldset>
+                <legend>Resultado da Tabuada</legend>
+
+                <select name="tabuada" id="tabuada" size="10">
+                    <option>O resultado da tabuada aparecerá aqui...</option>
+                </select>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p>Página Web desenvolvido por <strong>Felismino Chico.</strong></p>
+    </footer>
+</body>
+</html>

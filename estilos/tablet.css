@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+main{
+    max-width: 700px;
+    transition: max-width .4s;
+}
+
+main > section > fieldset{
+    margin: 0px auto 13px auto;
+    max-width: 490px;
+}
