@@ -5,6 +5,8 @@ function divisão(){
     let Inicio = window.document.getElementsByTagName('input')[1];
     let Fim = window.document.getElementsByName('fim')[0];
     let tabuada = window.document.querySelector('select#tabuada');
+    let caixa = window.document.getElementsByTagName('div')[0];
+    let parágrafo = window.document.getElementsByTagName('p')[3];
     let N = Number(Número.value);
     let I = Number(Inicio.value);
     let F = Number(Fim.value);
@@ -44,20 +46,18 @@ function divisão(){
         alert('[ERRO] O campo Fim da Contagem não deve ser menor que 1.')
         Fim.focus()
     }else if(I < F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c <= F; c++){
-            let item = window.document.createElement('option');
-            item.text = `${N} / ${c} = ${N / c}`;
-            tabuada.appendChild(item)
+            parágrafo.innerHTML += `${N} / ${c} = ${N / c} <br>`;
+            caixa.appendChild(parágrafo)
         }
     }else if(I > F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c >= F; c--){
-            let item = window.document.createElement('option');
-            item.text = `${N} / ${c} = ${N / c}`;
-            tabuada.appendChild(item);
+            parágrafo.innerHTML += `${N} / ${c} = ${N / c} <br>`;
+            caixa.appendChild(parágrafo);
         }
 
     }
@@ -70,6 +70,8 @@ function multiplicação(){
     let Inicio = window.document.getElementsByTagName('input')[1];
     let Fim = window.document.getElementsByName('fim')[0];
     let tabuada = window.document.querySelector('select#tabuada');
+    let caixa = window.document.getElementsByTagName('div')[0];
+    let parágrafo = window.document.getElementsByTagName('p')[3];
     let N = Number(Número.value);
     let I = Number(Inicio.value);
     let F = Number(Fim.value);
@@ -107,20 +109,18 @@ function multiplicação(){
         alert('[ERRO] O campo Fim da Contagem não deve ser menor que 1.')
         Fim.focus()
     }else if(I < F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c <= F; c++){
-            let item = window.document.createElement('option');
-            item.text = `${N} x ${c} = ${N * c}`;
-            tabuada.appendChild(item)
+            parágrafo.innerHTML += `${N} x ${c} = ${N * c} <br>`;
+            caixa.appendChild(parágrafo)
         }
     }else if(I > F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c >= F; c--){
-            let item = window.document.createElement('option');
-            item.text = `${N} x ${c} = ${N * c}`;
-            tabuada.appendChild(item);
+            parágrafo.innerHTML += `${N} x ${c} = ${N * c} <br>`;
+            caixa.appendChild(parágrafo);
         }
 
     }
@@ -133,6 +133,8 @@ function soma(){
     let Inicio = window.document.getElementsByTagName('input')[1];
     let Fim = window.document.getElementsByName('fim')[0];
     let tabuada = window.document.querySelector('select#tabuada');
+    let caixa = window.document.getElementsByTagName('div')[0];
+    let parágrafo = window.document.getElementsByTagName('p')[3];
     let N = Number(Número.value);
     let I = Number(Inicio.value);
     let F = Number(Fim.value);
@@ -170,22 +172,20 @@ function soma(){
         alert('[ERRO] O campo Fim da Contagem não deve ser menor que 1.')
         Fim.focus()
     }else if(I < F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c <= F; c++){
-            let item = window.document.createElement('option');
-            item.text = `${N} + ${c} = ${N + c}`;
-            tabuada.appendChild(item)
+            parágrafo.innerHTML += `${N} + ${c} = ${N + c} <br>`;
+            caixa.appendChild(parágrafo)
         }
     }else if(I > F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c >= F; c--){
-            let item = window.document.createElement('option');
-            item.text = `${N} + ${c} = ${N + c}`;
-            tabuada.appendChild(item);
+            parágrafo.innerHTML += `${N} + ${c} = ${N + c} <br>`;
+            caixa.appendChild(parágrafo);
         }
-
+        
     }
 }
 
@@ -196,6 +196,8 @@ function subtração(){
     let Inicio = window.document.getElementsByTagName('input')[1];
     let Fim = window.document.getElementsByName('fim')[0];
     let tabuada = window.document.querySelector('select#tabuada');
+    let caixa = window.document.getElementsByTagName('div')[0];
+    let parágrafo = window.document.getElementsByTagName('p')[3];
     let N = Number(Número.value);
     let I = Number(Inicio.value);
     let F = Number(Fim.value);
@@ -233,21 +235,20 @@ function subtração(){
         alert('[ERRO] O campo Fim da Contagem não deve ser menor que 1.')
         Fim.focus()
     }else if(I < F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c <= F; c++){
-            let item = window.document.createElement('option');
-            item.text = `${N} - ${c} = ${N - c}`;
-            tabuada.appendChild(item)
+            parágrafo.innerHTML += `${N} - ${c} = ${N - c} <br>`;
+            caixa.appendChild(parágrafo)
         }
     }else if(I > F){
-        tabuada.innerHTML = '';
+        parágrafo.innerHTML = '';
 
         for(let c = I; c >= F; c--){
-            let item = window.document.createElement('option');
-            item.text = `${N} - ${c} = ${N - c}`;
-            tabuada.appendChild(item);
+            parágrafo.innerHTML += `${N} - ${c} = ${N - c} <br>`;
+            caixa.appendChild(parágrafo);
         }
 
     }
+    
 }
