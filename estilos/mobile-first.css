@@ -64,3 +64,8 @@ footer{
     padding: 8px 8px 25px 8px;
     text-align: center;
 }
+
+footer > p > strong > a{
+    color: blue;
+    text-decoration: none;
+}
