@@ -8,7 +8,7 @@
 
 
 body{
-    background-color: #44474edc;
+    background-color: #021c53;
 }
 
 main{
@@ -44,14 +44,17 @@ main > section > fieldset > legend{
 }
 
 main > section > fieldset > button{
-    background-color: #44474edc;
+    background-color: #0748e081;
     border-radius: 6px;
-    color: white;
+    color: rgba(0, 0, 0, 0.61);
+    cursor: none;
+    display: block;
     font-size: 0.8em;
     font-weight: bold;
+    margin: auto;
     margin-bottom: 4px;
     padding: 10px;
-    width: 100px;
+    width: 68%;
 }
 
 /* main > section#res > fieldset > select{
@@ -64,7 +67,8 @@ main > section#res > fieldset > div{
     border-radius: 8px;
     font-weight: bold;
     max-width: 230px;
-    min-height: 250px;
+    height: 250px;
+    overflow-y: scroll;
     padding: 8px;
 }
 
