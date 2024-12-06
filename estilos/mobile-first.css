@@ -69,7 +69,7 @@ main > section > fieldset > button{
     padding: 6px;
 } */
 
-main > section#res > fieldset > div{
+main > section > fieldset > div{
     background-color: #021c53;
     border: 1px solid black;
     border-radius: 8px;
