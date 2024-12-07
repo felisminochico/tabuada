@@ -54,6 +54,7 @@ main > section > fieldset > legend{
 
 main > section > fieldset > button{
     background-color: #0748e081;
+    border: 0px solid black;
     border-radius: 6px;
     color: rgba(0, 0, 0, 0.473);
     display: block;
