@@ -1,0 +1,19 @@
+ {
+    "name": "Tabuada",
+    "short_name": "Minha App",
+    "display": "standalone",
+    "background_color": "blue",
+    "theme_color": "white",
+    "icons": [
+        {
+            "src": "icons/logo9_18_182214.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/logo9_18_182222.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+ }
